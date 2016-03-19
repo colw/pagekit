@@ -63,6 +63,31 @@ gulp
 webpack
 ```
 
+## Vagrant Instance
+
+If you prefer you can run an instance of Pagekit using [Vagrant](https://www.vagrantup.com/).
+
+Clone the repository.
+
+```
+git clone --branch develop git://github.com/pagekit/pagekit.git
+```
+
+Navigate to the cloned repository and begin your Vagrant instance.
+
+```
+vagrant up
+```
+
+Install node dependencies and build the front end components (for now, from the *host machine*, not the Vagrant instance).
+
+```
+npm install
+```
+
+Once complete, open [http://192.168.50.4](http://192.168.50.4) inside your web browser and continue installation. By default this ip is set inside the `Vagrantfile`.
+
+
 ## CLI
 
 Pagekit offers a set of commands to run usual tasks on the command line. You can see the available commands with
